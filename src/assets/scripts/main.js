@@ -5,8 +5,8 @@
 
 // import 'some-node-module';
 // import SomeModule from 'some-node-module';
-import AOS from 'aos';
-import 'aos/dist/aos.css';
+// import AOS from 'aos';
+// import 'aos/dist/aos.css';
 
 import Swiper from 'swiper';
 import { Navigation, Pagination, Autoplay } from 'swiper/modules';
@@ -19,15 +19,15 @@ import 'swiper/swiper.css';
  * Write any other JavaScript below
  */
 
-+(function () {
-  const university = "UOC";
-  console.log(`Hello, ${university}!`);
-})();
+// +(function () {
+//   const university = "UOC";
+//   console.log(`Hello, ${university}!`);
+// })();
 
-AOS.init({
-  duration: 800,
-  once: true
-})
+// AOS.init({
+//   duration: 800,
+//   once: true
+// })
 
 const swiper = new Swiper('.swiper', {
   autoplay: { delay: 3000, disableOnInteraction: false },
