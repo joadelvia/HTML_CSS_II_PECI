@@ -1,27 +1,173 @@
 <!DOCTYPE html>
 
 <html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width">
-    <link rel="stylesheet" type="text/css" href="./assets/styles/main.scss"><!-- do not remove this line! -->
-    <title>UOC Boilerplate</title>
-  </head>
-  <body>
-    <div class="uoc-container">
-      <picture>
-        <source srcset="./assets/images/logo.png?as=webp&width=350" type="image/webp" />
-        <img src="./assets/images/logo.png?width=350" alt="Universitat Oberta de Catalunya" class="uoc-logo" />
-      </picture>
-      <h1 class="uoc-title">Hello, UOC!</h1>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <link rel="stylesheet" type="text/css" href="./assets/styles/main.scss"><!-- do not remove this line! -->
+
+  <title>Descubre Sevilla</title>
+</head>
+
+<body>
+  <include src="./views/header.html"></include>
+  <include src="./views/slider.html"></include>
+  <main>
+    <!-- Descripción -->
+    <section class="city-about" data-aos="fade-right">
       <p>
-        This is a starter template for the Advanced HTML and CSS Tools courses
-        from the Master's Program in Multimedia Applications and the Master's
-        Program in Web App and Website Development at the Universitat Oberta de
-        Catalunya.
+        Sevilla, capital de Andalucía, combina historia, arte, flamenco y
+        gastronomía. Sus calles, plazas y monumentos transmiten siglos de
+        cultura y tradición. ¡Una ciudad que te enamorará!
       </p>
-    </div>
-    <include src="./views/footer.html"></include>
-    <script type="module" src="./assets/scripts/main.js"></script><!-- do not remove this line! -->
-  </body>
+    </section>
+
+    <hr class="city-separator" />
+
+    <!-- Sitios imprescindibles -->
+    <section class="city-sights" data-aos="fade-left">
+      <h2>10 sitios imprescindibles que ver en Sevilla</h2>
+
+      <div class="city-sights__grid">
+        <article class="city-sight" data-aos="zoom-in">
+          <picture>
+            <source srcset="./assets/images/catedral.webp" type="image/webp" />
+            <img src="./assets/images/catedral.jpg" alt="La Giralda" class="city-sight__img" />
+          </picture>
+
+          <header class="city-sight__header">
+            <h3 class="city-sight__title">Catedral de Sevilla</h3>
+          </header>
+
+          <section class="city-sight__what">
+            <h4>¿Qué es?</h4>
+            <p>
+              El mayor templo gótico del mundo.
+            </p>
+          </section>
+
+          <section class="city-sight__why">
+            <h4>¿Por qué ir?</h4>
+            <p>
+              “Hagamos un templo tan grandioso que los que lo vieren labrado nos tengan por locos”. Según las crónicas
+              de la época estas fueron las palabras que el Cabildo Catedralicio pronunció antes de ponerse manos a la
+              obra y levantar una de las catedrales más inmensas y bellas del mundo. Y es que la Catedral de Sevilla
+              deja perplejo por sus proporciones: todo es grande en ella. Tanto, que hizo falta todo un siglo para
+              finalizar su construcción (1403-1507), realizada sobre una antigua mezquita. No hay que perderse el
+              retablo mayor, considerado por muchos una de las obras más destacadas de la historia del arte. Tampoco
+              está de más presentar los respetos ante los restos del mismísimo Cristóbal Colón, cuyo mausoleo se
+              encuentra en el interior de la catedral.
+            </p>
+          </section>
+        </article>
+
+        <article class="city-sight" data-aos="zoom-in">
+          <picture>
+            <source srcset="./assets/images/alcazar.webp" type="image/webp" />
+            <img src="./assets/images/alcazar.jpg" alt="Real Alcázar" class="city-sight__img" />
+          </picture>
+
+          <header class="city-sight__header">
+            <h3 class="city-sight__title">Real Alcázar</h3>
+          </header>
+
+          <section class="city-sight__what">
+            <h4>¿Qué es?</h4>
+            <p>
+              Palacio real en uso más antiguo de Europa, mezcla de estilos islámico,
+              gótico, renacentista y barroco, con jardines espectaculares.
+            </p>
+          </section>
+
+          <section class="city-sight__why">
+            <h4>¿Por qué ir?</h4>
+            <p>
+              Son muchas las civilizaciones las que han hecho del Real Alcázar, a lo largo de la historia, uno de los
+              conjuntos monumentales más maravillosos del mundo. Por ello en él se pueden contemplar una interesante
+              mezcla de estilos que van del islámico al mudéjar, pasando por el gótico, el renacentista o el barroco.
+              Tras sus murallas se esconden todo un universo de jardines, palacios y fortalezas repletas de leyendas: el
+              Jardín de los Poetas, el Patio de las Doncellas, el Salón de Embajadores… ¡Tan especial son sus estancias
+              que hasta la serie Juego de Tronos o la película Alatriste ficharon el lugar como escenario para sus
+              producciones! Los conciertos que se llevan a cabo todas las noches de verano en sus jardines son un
+              auténtico 'must'.
+            </p>
+          </section>
+        </article>
+
+        <article class="city-sight" data-aos="zoom-in">
+          <img src="./assets/images/plaza-espana.jpg" alt="Plaza de España" />
+          <h3>Plaza de España</h3>
+          <p>
+            Impresionante plaza semicircular con azulejos y canales, perfecta
+            para pasear.
+          </p>
+        </article>
+
+        <article class="city-sight" data-aos="zoom-in">
+          <img src="./assets/images/metropol-parasol.jpg" alt="Metropol Parasol" />
+          <h3>Metropol Parasol</h3>
+          <p>
+            Conocido como “Las Setas”, ofrece una vista panorámica única del
+            centro histórico.
+          </p>
+        </article>
+
+        <article class="city-sight" data-aos="zoom-in">
+          <img src="./assets/images/torre-del-oro.jpg" alt="Torre del Oro" />
+          <h3>Torre del Oro</h3>
+          <p>
+            Torre defensiva del siglo XIII, situada junto al Guadalquivir.
+          </p>
+        </article>
+
+        <article class="city-sight" data-aos="zoom-in">
+          <img src="./assets/images/triana.jpg" alt="Barrio de Triana" />
+          <h3>Barrio de Triana</h3>
+          <p>
+            Uno de los barrios con más encanto, cuna del flamenco y la cerámica
+            sevillana.
+          </p>
+        </article>
+
+        <article class="city-sight" data-aos="zoom-in">
+          <img src="./assets/images/parque-maria-luisa.jpg" alt="Parque de María Luisa" />
+          <h3>Parque de María Luisa</h3>
+          <p>
+            Pulmón verde de Sevilla, ideal para pasear entre fuentes y jardines.
+          </p>
+        </article>
+
+        <article class="city-sight" data-aos="zoom-in">
+          <img src="./assets/images/macarena.jpg" alt="Basílica de la Macarena" />
+          <h3>Basílica de la Macarena</h3>
+          <p>
+            Templo emblemático dedicado a la Virgen de la Esperanza Macarena.
+          </p>
+        </article>
+
+        <article class="city-sight" data-aos="zoom-in">
+          <img src="./assets/images/archivo-indias.jpg" alt="Archivo de Indias" />
+          <h3>Archivo de Indias</h3>
+          <p>
+            Contiene valiosos documentos sobre la exploración y colonización de
+            América.
+          </p>
+        </article>
+
+        <article class="city-sight" data-aos="zoom-in">
+          <img src="./assets/images/plaza-toros.jpg" alt="Plaza de Toros de la Maestranza" />
+          <h3>Plaza de Toros de la Maestranza</h3>
+          <p>
+            Una de las plazas de toros más antiguas y monumentales de España.
+          </p>
+        </article>
+      </div>
+    </section>
+  </main>
+  <include src="./views/footer.html"></include>
+  <script type="module" src="./assets/scripts/main.js"></script><!-- do not remove this line! -->
+
+</body>
+
 </html>

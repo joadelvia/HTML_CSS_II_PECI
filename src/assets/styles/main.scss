@@ -1,20 +1,27 @@
 /**
- * Use this file to import partials.
- * Do not include SCSS code in this file.
+ * main.scss
+ * Entrada principal del CSS.
+ * Sigue la estructura ITCSS y aplica la metodología BEM.
  */
 
- /**
- * Import dependencies
- */
-@use "dependencies";
+/* 1. Settings: variables y funciones */
+@use '1-settings/functions';
+@use '1-settings/variables';
 
-/**
- * Import layouts
- * It's a best practice to use a different partial for each page
- */
+/* 2. Tools: mixins, helpers */
+@use '2-tools/mixins';
 
- @use "layouts/home";
+/* 3. Generic: reset o normalización */
+@use '3-generic/reset';
 
-/**
- * Do NOT include anything else in this file!
- */
+/* 4. Elements: estilos base para body, headings, etc. */
+@use '4-elements/base';
+
+/* 5. Objects: estructuras reutilizables (layout, grid...) */
+@use '5-objects/layout';
+
+/* 6. Components: bloques BEM (botones, hero, cards...) */
+@use '6-components/hero';
+@use '6-components/city';
+
+/* Fin de main.scss */
