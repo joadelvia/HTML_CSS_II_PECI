@@ -11,17 +11,16 @@
     padding: functions.rem(20);
     font-size: functions.rem(16);
     line-height: 1.6;
-    text-align: center;
-    // color: functions.shade-color(variables.$brand, 60%);
     color: variables.$brand;
+    text-align: center;
 }
 
 /* === SEPARADOR === */
 .city-separator {
+    width: 80%;
+    margin: functions.rem(20) auto;
     border: none;
     border-top: 1px solid #ccc;
-    margin: functions.rem(20) auto;
-    width: 80%;
 }
 
 /* === LISTA DE SITIOS === */
@@ -29,10 +28,10 @@
     padding: functions.rem(20);
 
     h2 {
-        text-align: center;
-        font-size: functions.rem(22);
         margin-bottom: functions.rem(20);
+        font-size: functions.rem(22);
         color: variables.$brand;
+        text-align: center;
     }
 
     &__grid {
@@ -71,12 +70,12 @@
     // }
 
     .city-sight {
+        padding: functions.rem(20);
+        text-align: center;
         background-color: #f9f9f9;
         border-radius: functions.rem(8);
-        padding: functions.rem(20);
         box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
         transition: transform 0.3s ease;
-        text-align: center;
 
         &:hover {
             transform: translateY(functions.rem(-5));
@@ -91,9 +90,9 @@
         &__img {
             width: 100%;
             height: auto;
-            border-radius: functions.rem(6);
-            object-fit: cover;
             max-height: functions.rem(500);
+            object-fit: cover;
+            border-radius: functions.rem(6);
         }
 
         &__header {
@@ -101,21 +100,21 @@
 
             .city-sight__title {
                 font-size: functions.rem(18);
-                color: variables.$brand;
                 font-weight: 700;
+                color: variables.$brand;
             }
         }
 
         &__what,
         &__why {
-            text-align: center;
             margin-bottom: functions.rem(15);
+            text-align: center;
 
             h4 {
-                font-size: functions.rem(14);
-                color: functions.shade-color(variables.$brand, -20%);
                 margin-bottom: functions.rem(5);
+                font-size: functions.rem(14);
                 font-weight: 700;
+                color: functions.shade-color(variables.$brand, -20%);
             }
 
             p {

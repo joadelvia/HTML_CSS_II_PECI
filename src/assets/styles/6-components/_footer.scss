@@ -2,11 +2,11 @@
 @use 'sass:color';
 
 .site-footer {
-    background-color: color.adjust(variables.$brand, $lightness: -10%);
-    color: white;
-    text-align: center;
     padding: 1.5rem 1rem;
     font-size: 0.9rem;
+    color: white;
+    text-align: center;
+    background-color: color.adjust(variables.$brand, $lightness: -10%);
 
     &__inner {
         max-width: variables.$max-width;

@@ -3,13 +3,13 @@
 
 /* === HERO === */
 .city-hero {
-    text-align: center;
     padding: functions.rem(30);
+    text-align: center;
 
     &__title {
         font-size: functions.rem(28);
-        color: variables.$brand;
         font-weight: 700;
+        color: variables.$brand;
     }
 
     @media (min-width: 768px) {
