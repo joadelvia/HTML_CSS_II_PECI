@@ -24,17 +24,17 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/uoc-advanced-html-css/uoc-boilerplate.git"
+    "url": "git+https://github.com/joadelvia/html_uoc_pec1.git"
   },
   "author": {
-    "name": "Jordi Tarrida",
-    "email": "jorditarrida@uoc.edu"
+    "name": "Joaquín Delhom",
+    "email": "joadelvia@gmail.com"
   },
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/uoc-advanced-html-css/uoc-boilerplate/issues"
+    "url": "https://github.com/joadelvia/html_uoc_pec1/issues"
   },
-  "homepage": "https://github.com/uoc-advanced-html-css/uoc-boilerplate#readme",
+  "homepage": "https://visitsevilla.netlify.app/",
   "devDependencies": {
     "@parcel/transformer-sass": "^2.15.3",
     "autoprefixer": "^10.4.20",
@@ -52,7 +52,6 @@
   },
   "dependencies": {
     "@fortawesome/fontawesome-free": "^7.0.1",
-    "aos": "^2.3.4",
     "swiper": "^12.0.3"
   }
 }

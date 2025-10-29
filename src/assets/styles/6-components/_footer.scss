@@ -1,0 +1,29 @@
+@use '../1-settings/variables';
+@use 'sass:color';
+
+.site-footer {
+    background-color: color.adjust(variables.$brand, $lightness: -10%);
+    color: white;
+    text-align: center;
+    padding: 1.5rem 1rem;
+    font-size: 0.9rem;
+
+    &__inner {
+        max-width: variables.$max-width;
+        margin: 0 auto;
+    }
+
+    &__author,
+    &__credits {
+        margin: 0.25rem 0;
+    }
+
+    a {
+        color: color.adjust(variables.$brand, $lightness: 35%);
+        text-decoration: none;
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+}
