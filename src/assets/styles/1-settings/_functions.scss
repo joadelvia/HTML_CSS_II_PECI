@@ -8,7 +8,7 @@
 @function shade-color($color, $percentage) {
 
     // Si el porcentaje es positivo, aclaramos el color
-    @if $percentage >0 {
+    @if $percentage > 0 {
         @return color.mix(white, $color, $percentage);
     }
 

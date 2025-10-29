@@ -1,9 +1,6 @@
 @use '../1-settings/variables';
 @use '../1-settings/functions';
 
-/* === SLIDER === */
-
-
 
 
 /* === DESCRIPCIÓN === */
@@ -43,31 +40,6 @@
             gap: functions.rem(30);
         }
     }
-
-    // .city-sight {
-    //     text-align: center;
-    //     background-color: #f8f8f8;
-    //     border-radius: functions.rem(8);
-    //     padding: functions.rem(15);
-    //     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-
-    //     img {
-    //         width: 100%;
-    //         border-radius: functions.rem(6);
-    //         margin-bottom: functions.rem(10);
-    //     }
-
-    //     h3 {
-    //         font-size: functions.rem(18);
-    //         margin-bottom: functions.rem(5);
-    //         color: variables.$brand;
-    //     }
-
-    //     p {
-    //         font-size: functions.rem(14);
-    //         color: #333;
-    //     }
-    // }
 
     .city-sight {
         padding: functions.rem(20);

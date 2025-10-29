@@ -1,0 +1,50 @@
+@use '../1-settings/variables';
+@use '../1-settings/functions';
+
+body {
+    padding: 0;
+    margin: 0;
+    font-family: system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+    font-size: functions.rem(16);
+    line-height: 1.6;
+    color: #222;
+    background-color: #fff;
+}
+
+/* Enlaces globales */
+a {
+    color: variables.$brand;
+    text-decoration: none;
+
+    &:hover,
+    &:focus {
+        text-decoration: underline;
+    }
+}
+
+/* Titulares */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin-top: 0;
+    font-weight: 700;
+    line-height: 1.2;
+    color: variables.$brand;
+}
+
+/* Imágenes */
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+/* Líneas horizontales genéricas */
+hr {
+    margin: functions.rem(20) 0;
+    border: 0;
+    border-top: 1px solid #ccc;
+}

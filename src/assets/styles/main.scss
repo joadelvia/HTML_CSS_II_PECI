@@ -9,7 +9,8 @@
 @use '1-settings/variables';
 
 /* 2. Tools: mixins, helpers */
-@use '2-tools/mixins';
+// De momoento no tenemos ningún mixin, pero se deja para un futuro
+// @use '2-tools/mixins';
 
 /* 3. Generic: reset o normalización */
 @use '3-generic/reset';
@@ -17,8 +18,6 @@
 /* 4. Elements: estilos base para body, headings, etc. */
 @use '4-elements/base';
 
-/* 5. Objects: estructuras reutilizables (layout, grid...) */
-@use '5-objects/layout';
 
 /* 6. Components: bloques BEM (botones, hero, cards...) */
 @use '6-components/hero';
