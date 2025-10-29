@@ -141,7 +141,7 @@
 
             h4 {
                 font-size: functions.rem(14);
-                color: shade-color(variables.$brand, -20%);
+                color: functions.shade-color(variables.$brand, -20%);
                 margin-bottom: functions.rem(5);
                 font-weight: 700;
             }
